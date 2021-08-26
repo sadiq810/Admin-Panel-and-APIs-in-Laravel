@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "f2b1f0c5-5d48-41c8-b786-67e98555ca2a",
+		"name": "admin panel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Languages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/languages",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/categories?lang_id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"categories"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2",
+							"description": "id, all"
+						},
+						{
+							"key": "type",
+							"value": "service",
+							"description": "service, article",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "all",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "first",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/faqs?lang_id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"faqs"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/blogs?lang_id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"blogs"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "all",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "first",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blog By Slug",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/blog/first-article-5?lang_id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"blog",
+						"first-article-5"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pages?lang_id=2&type=page",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pages"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						},
+						{
+							"key": "type",
+							"value": "page",
+							"description": "page, section"
+						},
+						{
+							"key": "search",
+							"value": "home",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pages Custom List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pages-list?lang_id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pages-list"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Page By Slug",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/page/home-2?lang_id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"page",
+						"home-2"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Features with details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/detail-features-list?lang_id=2&page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"detail-features-list"
+					],
+					"query": [
+						{
+							"key": "lang_id",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "1, all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/orders?page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "1, all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/order/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"order",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"customer@customer.com\",\r\n    \"password\": \"admin\"\r\n}"
+				},
+				"url": {
+					"raw": "http://admin panel.local/customer/login",
+					"protocol": "http",
+					"host": [
+						"admin panel",
+						"local"
+					],
+					"path": [
+						"customer",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CSRF TOKEN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://admin panel.local/sanctum/csrf-cookie",
+					"protocol": "http",
+					"host": [
+						"admin panel",
+						"local"
+					],
+					"path": [
+						"sanctum",
+						"csrf-cookie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Authenticated Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "eyJpdiI6InNrV1hXSXQ1SlQ5N3NjTGVDYmZScEE9PSIsInZhbHVlIjoic1dUN2ZmV2JkMTlQWDQxQTlKMyttYklMTjdKZlJxY1c1Q3oycENRTUZnd0hJZ3J5bGJaYjZVUnN5blh3N1M5RWNMN3VHU1RpQ0pDUklWZGFNNW1lUWdMM3VoN1FBaTVZejliUjQwaXFqMFVEL1JFczh6S1htRWowSS9TdmdEdXEiLCJtYWMiOiI4MDlmZjU0MTI0ZWY2N2QzYmY1MzQ5NDhkM2ZhODMwMGM1M2MwNTJkOWViOGE1ZGMyZmQ2NmVmNmFkOGQ4MDIwIn0%3D",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/auth/customer",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

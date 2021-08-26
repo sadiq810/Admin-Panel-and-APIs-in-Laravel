@@ -1,0 +1,10 @@
+td.details-control {
+    background: url('../../images/open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../../images/close.png') no-repeat center center;
+}
+.center-text{
+    text-align: center !important;
+}
