@@ -9,3 +9,6 @@
 - Please create .env file and copy content from .env.example
 - Run the following command to install all dependencies
 > composer install
+- Run the application using
+> php artisan serve
+- or create a virtual host.
